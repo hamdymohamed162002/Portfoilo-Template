@@ -1,0 +1,43 @@
+.Logo{
+    background-color: #6610f2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 15% 15% 15% 15% / 15% 15% 15% 15%;
+    .Big-circle{
+        width: 26px;
+        height: 26px;
+        border: 8px solid white;
+        border-radius: 50%;
+        position: absolute;
+        transform: translate(0,0);
+        top: 7px;
+        right: 10px;
+        transition: 0.5s;
+    }
+    .small-cricle{
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        bottom: 8px;
+        transition: 0.5s;
+        left: 10px;
+    
+        border-radius: 50%;
+        background-color: white;
+    }
+    &:hover {
+        .Big-circle{
+            transform: translate(-4px,6px);
+           
+        }
+        .small-cricle{
+            transform: translate(17px, -20px);
+        }
+    }
+
+}

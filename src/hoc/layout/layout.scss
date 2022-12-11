@@ -1,0 +1,22 @@
+.Page-Container{
+    margin-top: 60px;
+
+    width: 100%;
+    display: flex;
+justify-content: center;
+.container-fluid{
+    width: 100%;
+}
+}
+
+
+.layout{
+    width: 100%;
+
+}
+@media (max-width:650px) {
+    .Page-Container{
+        margin-top: 140px;
+    }
+    
+}

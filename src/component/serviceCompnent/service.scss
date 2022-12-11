@@ -1,0 +1,163 @@
+.Sevice-container {
+    position: relative;
+    width: 20%;
+    padding: 60px 40px;
+    height: 400px;
+transition: 300ms;
+    background-color: #fff;
+    .Service-text{
+        text-align: center;
+        h2{
+            font-size: 30px;
+        }
+    }
+.background{
+    background: #fff;
+    position: absolute;
+  
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform: perspective(500px) rotateY(-5deg);
+    opacity: 1;
+    transition: all .3s;
+}
+    &::before {
+        transform: perspective(500px) rotateY(-5deg);
+        position: absolute;
+        width: calc(100% - 5px);
+        height: calc(100% - 5px);
+        top: 32px;
+        content: "";
+        border: 4px solid #000345;
+        z-index: -2;
+        right: 32px;
+        transition: all .4s;
+        opacity: 0;
+        visibility: hidden;
+        box-shadow: 0 0 1px transparent;
+        transition-delay: .2s;
+    }
+
+    &::after {
+        width: 92%;
+        height: 92%;
+        left: 8px;
+        bottom: -20px;
+        background: rgba(0, 2, 72, 0.1);
+        content: "";
+        position: absolute;
+        z-index: -2;
+        transform-style: preserve-3d !important;
+        transform: rotateY(-10deg) !important;
+        filter: blur(50px);
+        opacity: 0;
+        visibility: hidden;
+        transition: all .7s;
+    }
+    &.Active::after{
+        opacity: 1;
+        visibility: visible;
+    }
+    &.Active::before{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .Service-icon {
+        display: flex;
+        justify-content: center;
+
+        .icon-before {
+            font-family: icomoon !important;
+            speak: never;
+            font-style: normal;
+            font-weight: 400;
+            font-feature-settings: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            position: relative;
+            height: 100px;
+            width: 120px;
+            z-index: 2;
+            perspective: 100px;
+            margin: 0 auto 45px;
+
+            &::before {
+                background: linear-gradient(180deg, #f7f6ff, #feefeb);
+                position: absolute;
+                content: "";
+                right: 44%;
+                top: -15%;
+                height: 100%;
+                width: 88px;
+                z-index: -1;
+                transform-style: preserve-3d;
+                transform: rotateY(-5deg);
+                box-shadow: 0 0 1px transparent;
+            }
+
+            .icon {
+                margin-right: 50px;
+                position: relative;
+                width: 62px;
+                height: 62px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                border-radius: 100%;
+                background: #5bcc9f;
+                left: 32px;
+                z-index: 1;
+                overflow: hidden;
+
+                .img {}
+            }
+
+        }
+
+    }
+}
+.icon-before{
+    &.blue{
+        &::before{
+            background: linear-gradient(134.74deg,#d6fffc,#fae7e4) !important;
+        }
+    }
+    &.purple{
+        &::before{
+            background: linear-gradient(180deg,#ebfffd,#efeefa) !important;
+        }
+    }
+}
+.icon{
+    &.blue{
+       background-color: #49ccff !important;
+    }
+    &.purple{
+      background-color: #702fff !important;
+    }
+}
+@media (max-width:1200px) {
+
+    .Sevice-container{
+        margin-top: 0 !important;
+  
+    }
+}
+@media (max-width:800px) {
+    .Sevice-container{
+       width: 80%;
+       margin: 50px;
+  
+    }
+    
+}

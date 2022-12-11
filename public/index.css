@@ -1,0 +1,15 @@
+*{
+    font-family: 'Raleway', sans-serif;
+   
+}
+
+html{
+    overflow-x: initial;
+    scroll-behavior: smooth;
+}
+body{
+    
+    background: linear-gradient(270deg,#fff,#f4ff99 24.38%,#e3d4f9 77.05%,#fff);
+    overflow-x: hidden;
+    box-sizing: border-box;
+}

@@ -1,0 +1,32 @@
+.Services-container{
+    padding: 5rem 0;
+    background-color: #fff;
+    display: flex;
+    position: relative;
+    z-index: -0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    .container-fluidd{
+        justify-content: space-between;
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.Services-text{
+    text-align: center;
+    h2{
+        font-size: 50px;
+    }
+.badge{
+    background: rgba(0,208,156,.1);
+    color: #00d09c;
+    height: 36px;
+    padding: 0 12px;
+    font-size: 15px;
+    line-height: 35px;
+    display: inline-block;
+    margin-bottom: 20px;
+}}

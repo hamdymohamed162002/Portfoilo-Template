@@ -1,0 +1,55 @@
+.Btn{
+    
+    width: 40%;
+        border: 2px #702fff solid;
+        background-color: transparent;
+        height: auto;
+        overflow: hidden;
+        z-index: 3;
+        position: relative;
+        color: #dae4fb;
+        padding: 0.5rem 1.5rem;
+       transition: 1s 0.4s background-color;
+        font-size: 1.1rem;
+        &.Light{
+            color: #000248;
+        }
+    &.Light::after{
+        content: "";
+        position: absolute;
+        background-color: #dc3545;
+        height: 100%;
+        transition: 0.4s;
+        z-index: -2;
+        width: 0%;
+        top: 0;
+        left: 0px;
+    }
+    &.Light::before{
+        content: "";
+        position: absolute;
+        background-color: #6f42c1;
+        height: 100%;
+        transition: 0.6s;
+        z-index: -1;
+        width: 0%;
+        top: 0;
+        left: 0px;
+    }
+    &.Light:hover {
+        border: 2px #6f42c1 solid;
+        color: #d3d3d4;
+        
+   
+    }
+    
+    &.Light:hover::after {
+        width: 120%;
+    }
+    
+    &:hover::before {
+        width: 120%;
+    }
+    
+    
+}

@@ -1,0 +1,67 @@
+.input-container{
+    position: relative;
+    width: 45%;
+    margin-bottom: 30px;
+    padding: 0 15px;
+    input{
+        
+        border: 0;
+        border-bottom: 2px solid #c7c7d5;
+        background-color: transparent;
+        padding-bottom: 8px;
+        padding-top: 8px;
+        font-size: 18px;
+        font-weight: 400;
+        height: auto;
+        line-height: 28px;
+        background: transparent;
+        box-shadow: none;
+        padding: 0;
+        outline: none;
+        width: 100%;
+       
+      
+       
+    }
+    &.foucesd{
+       label{
+            top: -16px;
+        font-size: 12px;
+        color: #702fff;
+        transition: .3s;}
+        
+  
+    }
+    label{
+        position: absolute;
+        left: 16px;
+        width: 100%;
+        top: 0px;
+        color: #757589;
+        transition: .3s;
+        z-index: -1;
+        letter-spacing: .5px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .textarea{
+        border: 0;
+        min-height: 165px;
+        padding-bottom: 8px;
+        padding-top: 8px;
+        border-bottom: 2px solid #c7c7d5;
+        background-color: transparent;
+        resize: none;
+        width: 100%;
+        &:focus-visible{
+outline: none;
+        }
+    }
+}
+@media (max-width:1151px) 
+{
+    .input-container{
+        width: 100%;
+    }
+    
+}

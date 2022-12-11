@@ -1,0 +1,37 @@
+.feedback{
+    background-color: #fafafb;
+    padding: 5rem 0;
+    display: flex;
+ 
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+  
+    .Cards-container{
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;height: 600px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .feed-text{
+        margin-bottom: 4rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        .badge{
+            height: 36px;
+            padding: 0 12px;
+            font-size: 15px;
+            line-height: 35px;
+            display: inline-block;
+            margin-bottom: 20px;
+            background: rgba(122,25,255,.1);
+        }
+        h2{
+            font-size: 30px;
+        }
+    }
+}

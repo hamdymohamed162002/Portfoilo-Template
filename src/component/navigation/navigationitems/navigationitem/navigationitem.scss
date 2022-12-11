@@ -1,0 +1,30 @@
+li{
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    padding: 5px;
+    overflow: hidden !important;
+    .underline{
+
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        left: 0px;
+        transform: translateX(-130%);
+        height: 2px;
+        background-color:#702fff ;
+        transition: 0.5s;
+    }
+   
+      .underline{
+       &.Active{
+            transform: translateX(0%);
+        }
+       
+      }
+
+  
+}

@@ -1,0 +1,117 @@
+.Projects{
+    padding: 20rem 0 5rem 0;
+    background-color: #fff;
+width: 100%;
+overflow: hidden;
+display: flex;
+justify-content: center;
+
+.floating-div{
+    position: absolute;
+    transition: all 1s cubic-bezier(.2,.02,.6,1.03) 0s;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 10px solid #702fff;
+    left: 0;
+    z-index: -0;
+}
+.floating-line{
+    position: absolute;
+    transition: all 1s cubic-bezier(.2,.02,.6,1.03) 0s;
+    width: 10px;
+    height: 200px;
+    border-radius:100px ;
+    transform: rotate(25deg);
+    background-color: #06d6a0;
+    bottom: 50%;
+
+
+    right: -50px;
+    z-index: -0;
+}
+.floating-line2{
+    position: absolute;
+    transition: all 1s cubic-bezier(.2,.02,.6,1.03) 0s;
+    width: 10px;
+    height: 200px;
+    border-radius:100px ;
+
+    background-color: #da2c38;
+    bottom: 50%;
+
+
+    left: -100px;
+    z-index: -0;
+}
+    .Projects-container{
+      margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+    }
+    .container-Fluid{
+        position: relative;
+        width: 80%;
+        .backGround{
+            position: absolute;
+        
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.Projects-title
+{
+    padding-left: 10px;
+    .badge{
+        height: 36px;
+        padding: 0 12px;
+        font-size: 15px;
+        line-height: 35px;
+        display: inline-block;
+        margin-bottom: 20px;
+        background: rgba(0,122,255,.1);
+        color: #007aff!important;
+    }
+    .title{
+        display: flex;
+        font-size: 40px ;
+        color:  white;
+        mix-blend-mode: difference;
+        
+    }
+}
+@media (max-width:1200px) {
+   .Projects{
+    .container-Fluid{
+        width: 90% ;
+    }
+    
+   }
+}
+@media (max-width:600px) {
+    .Projects{
+        .container-Fluid{
+            width: 100% ;
+        }
+        
+       }
+}
+.btn-text{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    h3{
+        text-align: center;
+        text-transform: capitalize;
+    }
+}

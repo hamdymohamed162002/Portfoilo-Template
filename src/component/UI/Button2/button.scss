@@ -1,0 +1,28 @@
+.btn-2{
+    width: 40%;
+    border: 1px solid #702fff ;
+ padding: 0.5rem 1.5rem;
+ position: relative;
+ background-color: none;
+ overflow: hidden;
+ z-index: 1;
+ div{
+   
+    position: absolute;
+    border-radius: 50%;
+    width: 0px;
+    transition: 0.5s;
+    transform: translate(-50%,-50%);
+ 
+    z-index: -1;
+    background-color: #702fff;
+    height: 0px;
+ }
+ &:hover{
+    color: white;
+ }
+ &:hover > div{
+width: 1000px;
+height: 1000px;
+ }
+}

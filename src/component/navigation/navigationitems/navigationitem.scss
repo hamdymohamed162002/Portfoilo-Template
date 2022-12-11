@@ -1,0 +1,28 @@
+.Nav-container{
+    width: 93%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    ul{
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        li{
+      
+           
+            font-size: 16px;
+            line-height: 22px;
+            text-decoration: none;
+            font-weight: 700;
+            padding: 24px 15px;
+
+        }
+        li.Dark{
+            color: #000248;
+        }
+        li.Light{
+            color: #d3d3d4;
+        }
+
+    }
+}
